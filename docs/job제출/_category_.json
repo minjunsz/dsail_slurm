@@ -1,0 +1,8 @@
+{
+    "label": "Job 제출하기",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "sbatch 명령어를 이용하여 Job을 제출하는 방법에 대해 설명합니다."
+    }
+}
