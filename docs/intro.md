@@ -56,10 +56,3 @@ SLURM의 job scheduling 방식은 설정하기 나름이고 사용하는 기관�
     - 공용 queue는 GPU 개수에 제한이 없습니다. 따라서 팀별 queue를 모두 사용한 경우, 공용 queue에 작업을 등록함으로써 다른 팀에서 사용하지 않는 GPU를 사용할 수 있습니다.
     - 우선순위는 `팀별 queue > 공용 queue` 이므로 GPU가 모자란 경우 공용 queue의 작업을 강제로 kill하고 팀별 queue에 GPU를 할당합니다.
     따라서, 공용 queue를 사용하는 경우 주기적으로 checkpoint를 생성해야합니다.
-
----
-TODO
-- 컨테이너 사용
-- Open OnDemand
-- server monitoring tool(script)
-- ddp

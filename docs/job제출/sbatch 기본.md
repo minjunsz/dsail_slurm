@@ -7,6 +7,12 @@ sidebar_position: 1
 `sbatch` 명령어를 사용하는 기본 작동 방식에 대해 알아봅니다.   
 Tutorial에 사용되는 모든 코드는 login node의 `/guide/` 폴더에 있으니 사용하기 전에 example code를 복사해서 사용하시면 됩니다.
 
+:::info [**TL;DR**]
+- 일반적인 shell script를 작성한다.
+- shell script 상단에 `#SBATCH` 구분으로 옵션을 작성하고 `sbatch ~.slurm` 명령어로 작업을 등록한다.
+- print된 결과는 `slurm-<JOB_ID>.out` 파일에 기록된다.
+:::
+
 ## 프로그램 구동 방법
 
 아래와 같이 5초를 카운트 하는 간단한 타이머를 python으로 구현했다고 해봅시다.
@@ -45,3 +51,10 @@ python counter.py
 
 일반적인 shell script에 `#SBATCH`로 시작하는 구문이 추가된 것을 볼 수 있습니다.
 이렇게 slurm에 필요한 설정을 추가한 뒤 `sbatch counter.slurm` 이라는 명령어를 이용하면 해당 script가 slurm scheduler에 등록됩니다.
+작업을 제출하게 되면 `Submitted batch job <JOB_ID>`라는 문구가 나옵니다.
+
+## sbatch 사용시 print 결과
+
+일반적인 shell script를 실행한다면 바로 터미널에 로그들이 출력됩니다.
+그러나 scheduler를 사용하게 되면 프로그램이 즉시 실행되지 않을 수 있고, 여러개의 프로그램이 동시에 실행될 수도 있습니다.
+따라서 slurm을 통해 실행한 프로그램의 출력값은 `slurm-<JOB_ID>.out` 파일에 기록됩니다.

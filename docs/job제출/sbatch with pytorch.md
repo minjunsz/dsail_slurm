@@ -6,6 +6,11 @@ sidebar_position: 2
 
 pytorch를 사용하기 위해 slurm script를 수정하는 방법을 소개합니다.
 
+:::info [**TL;DR**]
+- `#SBATCH`에 gpu 옵션을 추가한다.
+- `conda activate` 이전에 conda를 시작하는 코드를 넣어준다.
+:::
+
 ## conda 설치
 
 miniconda를 통해 python 환경을 관리합니다. miniconda 설치 script는 `/guide/` 폴더에 있습니다.
