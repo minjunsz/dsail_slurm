@@ -1,0 +1,8 @@
+{
+    "label": "container 사용",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Docker와 유사한 container 환경 사용 방법에 대해 알아봅니다."
+    }
+}
