@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://minjunsz.github.io',
+  url: 'https://minjunpark.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/dsail_slurm/',
@@ -48,7 +48,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/dsail-social-card.jpg',
     navbar: {
       title: 'SNU DSAIL SLURM',
       // logo: {
