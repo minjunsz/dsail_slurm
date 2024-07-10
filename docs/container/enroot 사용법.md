@@ -36,6 +36,8 @@ machine authn.nvidia.com login $oauthtoken password <token>
 ```
 
 NGC 외에도 로그인이 필요한 이미지 저장소를 사용한다면 동일하게 id, token을 해당 파일에 기록해주시면 됩니다.
+
+gpu 사용에 최적화된 컨테이너는 [NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch)에서 찾아보실 수 있습니다.
 ```bash
 enroot import nvcr.io/nvidia/pytorch:24.01-py3
 ```
